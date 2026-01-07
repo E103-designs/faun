@@ -4,10 +4,10 @@ E103 faun is an open source multi-utility 2HP eurorack module that can change fu
 # The idea behind it
 I had the idea of faun while trying to revamp my past eurorack passive modules (S2XM and picoMID1U). Initial faun was like the man in the middle, being simply half the size of S2XM and with the pin headers of the picoMID1U in the back, but then I had the idea of using the faun in its basic form as a blank canvas for all sorts of passive eurorack projects.
 
-By using the "MODS" you can use any signal coing in or out from the jack inputs on the front and treat them how you want ;)
+By using the "MODS" you can use any signal going IN or OUT from the mono and stereo jacks on the front and treat them how you want ;)
 
 # Basic usage
-At its core, faun is simply made of 6 3.5mm jacks (4 mono and 2 stereo) with pins exposed on the back.
+At its core, faun is simply made of 6x 3.5mm jacks (4 mono and 2 stereo) with various pins exposed on the back.
 They are grouped in the top and bottom triplet (named 1, 2, A and 3, 4, B, where A and B being the stereo jacks). This is to recall the function of the S2XM, which is a module that splits a stereo channel into two mono channels, or as a CV breakout for MPC One and Live. 
 In the back, a 3x5 pin header matrix exposes various connection, arranged in a way that allows useful jumper settings to achieve different uses without any additional MODS (see relative pictures)
 
@@ -29,5 +29,5 @@ MODS are PCB that are rear mounted onto faun to give the module additional funct
 - MOD6: Passive Diode Clipper/Dual LPG/VC Panner (by changing jumper positions)
 
 # Future development
-Currently I only developed passive modules, but no one is stopping me or you to design active modules! The biggest limitation is PCB space being 2HP only.
+Currently I only developed passive modules, but no one is stopping me (OR YOU!) to design active modules! The biggest limitation is PCB space being 2HP only.
 But I think that a simple LM13700 VCA can be obtained by using SMD components and creative workarounds :)
