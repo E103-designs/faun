@@ -9,7 +9,8 @@ By using the "MODS" you can use any signal going IN or OUT from the mono and ste
 # Basic usage
 At its core, faun is simply made of 6x 3.5mm jacks (4 mono and 2 stereo) with various pins exposed on the back.
 They are grouped in the top and bottom triplet (named 1, 2, A and 3, 4, B, where A and B being the stereo jacks). This is to recall the function of the S2XM, which is a module that splits a stereo channel into two mono channels, or as a CV breakout for MPC One and Live. 
-In the back, a 3x5 pin header matrix exposes various connection, arranged in a way that allows useful jumper settings to achieve different uses without any additional MODS (see relative pictures)
+In the back, a 3x5 pin header matrix exposes various connection, arranged in a way that allows useful jumper settings to achieve different uses without any additional MODS (see relative page for explanations [here](https://github.com/E103-designs/faun/blob/7ad7701eaba7f7385ea16005ce7d22d27b760d93/faun%20Main%20Module%20overview.md)
+
 
 faun, on its basic form, allows by using jumpers or not to be used in the following ways:
 - Two independent Stereo to Dual Mono (L&R) signal splitter
