@@ -41,5 +41,5 @@ MODS are PCB that are rear mounted onto faun to give the module additional funct
 - MOD7 (WIP): Playground -> Every faun pin is available as a female connector, allowing to mount directly components or male dupont cables to create custom routing!
 
 # Future development
-Currently I only developed passive modules, but no one is stopping me (OR YOU!) to design active modules! The biggest limitation is PCB space being 2HP only.
+Currently I only developed passive MODS, but no one is stopping me (OR YOU!) to design active modules! The biggest limitation is PCB space being 2HP only.
 But I think that a simple LM13700 VCA can be obtained by using SMD components and creative workarounds :)
