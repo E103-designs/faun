@@ -1,0 +1,20 @@
+{
+  "publication_date": "2026-10-27",
+  "project": "faun",
+  "files": {
+    ".gitignore": "53739ad86610453148fd902f4b7ea221680982a84c30bc55e4faca990f1c7645",
+    "CONTRIBUTING.md": "a11961d8afbb22336be9ab4e1e4638f914baab72586c87d8c63a29df8ca824a9",
+    "LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "NOTICE.md": "7a9389a2120665da73922d9da7d360c4d370fc488c8f4b1ad45f8e600bae4a56",
+    "README.md": "0eb08970fc35f8561363b6f096b08fdb5127068fedb56cae0046909bd346682f",
+    "docs/DEVELOPMENT.md": "999ec711bb955b41c88c46a918566c9364a95dd9c45f78820f7f7069f4c46724",
+    "docs/MANUALE_IT.md": "70ffd2562be042d3d1a7fb834d92d4d0ef6a90e6a22100f9b2a6f3a286f8e06d",
+    "docs/USER_MANUAL.md": "78417d818bd286393296d8bffa4d211bcbd668aae08ea6b665d41cf5a5c7daf1",
+    "docs/faun-manual-EN.pdf": "2ab005a15ea8817a30640369943e6e30dbc7a68d49516793a0dfd4be24b14eee",
+    "docs/faun-manuale-IT.pdf": "c7923ed41fe3e14dee75ea5ced89ed6149ae3c654ea3f3225bf54d57270d7cf9",
+    "hardware/schematics/README.md": "b59e7a494b717dd500530301a54ba12b79f07bdc8d4e85780de77a837ae1a982",
+    "images/back.jpg": "421af0d3dc848b61fcc802814a033c8b30e0d354d3e37d6cc30d1d9eb9ec3180",
+    "images/detail.jpg": "424e4c12d7e59a58fcd7410149b069f4a07b32cd8a74c9813a712738d2e36eec",
+    "images/front.jpg": "4ef0fbe941386b1ee5f43d78adb63e0bfc9330069da3a25c5fbbfb17b6895278"
+  }
+}
