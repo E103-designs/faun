@@ -6,6 +6,7 @@ FAUN base assemblato. Schede MOD1-MOD6 opzionali.
 FAUN è una utility passiva Eurorack configurabile: i sei jack vengono collegati attraverso jumper o cavi sul connettore posteriore. Non ha una funzione fissa per ciascun jack: il ruolo dipende dal cablaggio e dall’eventuale scheda MOD installata.
 
 | BASE: CON JUMPER / CAVI | SOLO CON SCHEDA OPZIONALE |
+| --- | --- |
 | Splitter TRS, breakout CV/Gate, multipli passivi, adattamento MIDI TRS, breakout MIDI e collegamenti fra due FAUN. | Mixer stereo/mono, DAC R-2R, panning mixer, XOR/rettificatore e funzioni MOD6. |
 
 Versione attuale: pannello nero, PCB viola, jack argentati, quattro corpi jack neri e due verde chiaro.
@@ -27,6 +28,7 @@ FAUN è passivo: non richiede alimentazione Eurorack. Il connettore 3 x 5 poster
 TS e TRS non sono intercambiabili
 
 | CAVO | CONTATTI | USO |
+| --- | --- | --- |
 | TS mono | Tip = segnale; sleeve = massa | Jack 1, 2, 3, 4 e patch mono |
 | TRS stereo | Tip = L; ring = R; sleeve = massa | A e B per audio stereo o due segnali separati |
 | TRS MIDI | Tip/ring = coppia MIDI | Pinout Type A o B secondo il dispositivo |
@@ -45,6 +47,7 @@ La griglia è una vista logica del connettore: righe X, Y, Z e colonne 1-5. Sul 
 Links: 
 
 | PIN | COLLEGAMENTO |
+| --- | --- |
 | X1 / X2 | A tip (L) / A ring (R) |
 | X3 / X4 | B ring (R) / B tip (L) |
 | X5 | Massa comune (sleeve) |
@@ -62,6 +65,7 @@ Modalità della base: 4 jumper, nessuna scheda MOD.
 Links: X1-Y1, X2-Y2, X3-Y3, X4-Y4
 
 | TRS | CONTATTO | JACK MONO |
+| --- | --- | --- |
 | A | Tip / Left | 1 |
 | A | Ring / Right | 2 |
 | B | Tip / Left | 4 |
@@ -106,6 +110,7 @@ Collegamento
 3. Collega la sorgente MIDI ad A e la destinazione MIDI a B con cavi/adattatori TRS adatti ai due dispositivi.
 
 | PERCORSO | RISULTATO |
+| --- | --- |
 | A tip > 1 > 3 > B ring | Tip e ring scambiati |
 | A ring > 2 > 4 > B tip | Ring e tip scambiati |
 | Sleeve A > massa comune > sleeve B | Massa mantenuta |
@@ -124,6 +129,7 @@ I tre ponti mostrati uniscono soltanto 1, 2, 3 e 4 come multiple passivo a quatt
 Esempio verificabile: disting EX, Type A
 
 | HEADER MIDI DEL DISTING EX | PIN FAUN | RUOLO |
+| --- | --- | --- |
 | 1: OUT DIN 4 | X2 | A ring: MIDI Out |
 | 2: OUT DIN 5 | X1 | A tip: MIDI Out |
 | 3: IN DIN 5 | X4 | B tip: MIDI In |
@@ -139,6 +145,7 @@ Richiede due FAUN e cavetti posteriori.
 Due FAUN possono trasferire segnali tra due punti del rack tramite cavetti interni. Spegni il sistema, togli jumper e MOD da entrambi e collega pin con la stessa funzione. Questa è una connessione passiva, senza isolamento né rigenerazione.
 
 | PERCORSO | FAUN 1 > FAUN 2 |
+| --- | --- |
 | Mono 1 ... 4 | Y1 > Y1; Y2 > Y2; Y3 > Y3; Y4 > Y4 |
 | Stereo A | X1 > X1 (tip); X2 > X2 (ring) |
 | Stereo B | X4 > X4 (tip); X3 > X3 (ring) |
@@ -160,6 +167,7 @@ Le funzioni seguenti richiedono la scheda corrispondente.
 Il FAUN base non contiene contemporaneamente tutti questi circuiti. Una scheda preset cambia la funzione dei jack; le MOD1-MOD6 sono accessori opzionali. Le tre funzioni della MOD6 si selezionano con i suoi jumper, non sono tre moduli indipendenti.
 
 | SCHEDA | FUNZIONE | PAGINA |
+| --- | --- | --- |
 | MOD1 | Mixer stereo passivo a 3 canali | 11 |
 | MOD2 | Mixer mono passivo a 5 ingressi | 11 |
 | MOD3 | DAC passivo R-2R a 5 bit | 12 |
@@ -183,6 +191,7 @@ Scheda opzionale richiesta. Nessun controllo di guadagno.
 MOD1 - tre canali stereo
 
 | JACK | FUNZIONE |
+| --- | --- |
 | 1 / 2 | Ingresso stereo 1: L / R su due cavi TS |
 | A | Ingresso stereo 2 su TRS: tip L, ring R |
 | 3 / 4 | Ingresso stereo 3: L / R su due cavi TS |
@@ -193,6 +202,7 @@ Collega le sorgenti ai tre ingressi e porta B a un ingresso stereo ad alta imped
 MOD2 - cinque ingressi mono
 
 | JACK | FUNZIONE |
+| --- | --- |
 | 1 | Ingresso mono 1 |
 | 2 | Ingresso mono 2 |
 | A | Ingresso mono 3 (TS) |
@@ -208,6 +218,7 @@ Due schede diverse, due usi distinti.
 MOD3 - DAC R-2R a 5 bit
 
 | JACK | PESO BINARIO |
+| --- | --- |
 | 1 | 1 (bit meno significativo) |
 | 2 | 2 |
 | A | 4 |
@@ -220,6 +231,7 @@ Invia fino a cinque gate con livelli alto/basso coerenti ai cinque ingressi; pre
 MOD4 - cinque posizioni stereo fisse
 
 | JACK | POSIZIONE |
+| --- | --- |
 | 1 | Tutto a sinistra |
 | 2 | Intermedia sinistra |
 | A | Centro |
@@ -233,6 +245,7 @@ Inserisci sorgenti mono nei cinque jack di ingresso e porta B a un percorso ster
 Due sezioni sullo stesso preset opzionale.
 
 | JACK | FUNZIONE |
+| --- | --- |
 | 1 | Ingresso XOR 1 |
 | 2 | Ingresso XOR 2 |
 | A | Uscita XOR |
@@ -245,6 +258,7 @@ XOR: variazioni ritmiche
 Collega due gate compatibili a 1 e 2 e preleva A. La funzione XOR ideale è alta quando uno solo dei due ingressi è alto, bassa quando entrambi sono uguali. Invia il risultato a un ingresso gate adatto e prova combinazioni di clock o pattern.
 
 | INGRESSO 1 | INGRESSO 2 | XOR IDEALE |
+| --- | --- | --- |
 | 0 | 0 | 0 |
 | 0 | 1 | 1 |
 | 1 | 0 | 1 |
@@ -262,6 +276,7 @@ Due percorsi controllati da tensione, con vactrol.
 MOD6: U10 1-2, U11 2-3, U13 1-2, U12 1-2
 
 | JACK | FUNZIONE |
+| --- | --- |
 | 1 | CV del canale LPG1 |
 | 2 | Segnale audio del canale LPG1 |
 | A | Uscita LPG1 |
@@ -281,6 +296,7 @@ Una CV comune, due ingressi e due uscite.
 MOD6: U10 2-3, U11 1-2, U13 2-3, U12 1-2
 
 | JACK | FUNZIONE |
+| --- | --- |
 | 1 | CV di controllo comune |
 | 2 | Segnale in 1 |
 | A | Uscita 1 |
@@ -302,6 +318,7 @@ Un percorso passivo per modellare la forma d’onda.
 MOD6: U10 2-3, U11 1-2, U13 1-2, U12 2-3
 
 | JACK | FUNZIONE |
+| --- | --- |
 | 1 | Ingresso clipper |
 | 2 | Non usato |
 | A | Uscita clipper |
@@ -317,6 +334,7 @@ Non sono specificati soglia di clipping, simmetria o livello massimo ammesso. No
 Controlla prima cablaggio, cavo e modalità installata.
 
 | SINTOMO | CONTROLLO |
+| --- | --- |
 | Manca un canale stereo | Usa TRS su A/B. Nello splitter: A L=1, A R=2, B L=4, B R=3. |
 | Il mult unisce segnali inattesi | Rimuovi tutti i ponti e ricrea soltanto la configurazione scelta. Non inserire più sorgenti nello stesso gruppo. |
 | Livello basso nel mixer | Attenuazione e dipendenza dal carico sono proprie della somma passiva. Recupera guadagno a valle. |
@@ -334,6 +352,7 @@ Maneggia il modulo dai bordi. Evita trazioni sui cavetti interni, liquidi e cont
 Edizione aggiornata ai colori della versione fotografata.
 
 | MODALITÀ BASE | PONTI POSTERIORI |
+| --- | --- |
 | Splitter / CV-Gate / adattatore MIDI | X1-Y1; X2-Y2; X3-Y3; X4-Y4 |
 | Due mult 1 x 2 | X1-Y1; X4-Y4; Z1-Z2; Z3-Z4 |
 | Un mult 1 x 5 | Come sopra + Y2-Y3 |

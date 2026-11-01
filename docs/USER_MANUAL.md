@@ -6,6 +6,7 @@ Assembled FAUN base. MOD1-MOD6 boards are optional.
 FAUN is a configurable passive Eurorack utility. Its six sockets are routed using jumpers or wires on the rear header. Socket roles depend on the selected wiring and on any installed optional MOD board.
 
 | BASE: USING JUMPERS / WIRES | OPTIONAL BOARD REQUIRED |
+| --- | --- |
 | TRS splitting, CV/Gate breakout, passive multiples, TRS MIDI adaptation, MIDI breakout and links between two FAUN units. | Stereo/mono mixing, R-2R DAC, panning mixer, XOR/rectifier and MOD6 functions. |
 
 Current version: black panel, purple PCB, silver sockets, four black jack bodies and two pale green jack bodies.
@@ -27,6 +28,7 @@ FAUN is passive and needs no Eurorack power connection. The rear 3 x 5 header ca
 TS and TRS are different
 
 | CABLE | CONTACTS | USE |
+| --- | --- | --- |
 | Mono TS | Tip = signal; sleeve = ground | Sockets 1, 2, 3, 4 and mono patches |
 | Stereo TRS | Tip = L; ring = R; sleeve = ground | A and B for stereo audio or two separate signals |
 | TRS MIDI | Tip/ring = MIDI pair | Type A or B pinout as required by the device |
@@ -45,6 +47,7 @@ This grid is a logical map of the header: rows X, Y, Z and columns 1-5. The phys
 Links: 
 
 | PIN | CONNECTION |
+| --- | --- |
 | X1 / X2 | A tip (L) / A ring (R) |
 | X3 / X4 | B ring (R) / B tip (L) |
 | X5 | Common sleeve ground |
@@ -62,6 +65,7 @@ Base mode: 4 jumpers, no MOD board.
 Links: X1-Y1, X2-Y2, X3-Y3, X4-Y4
 
 | TRS | CONTACT | MONO SOCKET |
+| --- | --- | --- |
 | A | Tip / Left | 1 |
 | A | Ring / Right | 2 |
 | B | Tip / Left | 4 |
@@ -106,6 +110,7 @@ Connection
 3. Connect the MIDI source to A and the MIDI destination to B using TRS cables/adapters suitable for the two devices.
 
 | PATH | RESULT |
+| --- | --- |
 | A tip > 1 > 3 > B ring | Tip routes to ring |
 | A ring > 2 > 4 > B tip | Ring routes to tip |
 | A sleeve > common ground > B sleeve | Sleeve connection retained |
@@ -124,6 +129,7 @@ The three links join only 1, 2, 3 and 4 as a four-socket passive multiple (one s
 Reference example: disting EX, Type A
 
 | DISTING EX MIDI HEADER | FAUN PIN | ROLE |
+| --- | --- | --- |
 | 1: OUT DIN 4 | X2 | A ring: MIDI Out |
 | 2: OUT DIN 5 | X1 | A tip: MIDI Out |
 | 3: IN DIN 5 | X4 | B tip: MIDI In |
@@ -139,6 +145,7 @@ Requires two FAUN units and rear jumper wires.
 Two FAUN units can move signals between rack locations using internal wires. Switch off, remove jumpers and MOD boards from both units and connect matching signal functions. The connection is passive, with no isolation or regeneration.
 
 | PATH | FAUN 1 > FAUN 2 |
+| --- | --- |
 | Mono 1 ... 4 | Y1 > Y1; Y2 > Y2; Y3 > Y3; Y4 > Y4 |
 | Stereo A | X1 > X1 (tip); X2 > X2 (ring) |
 | Stereo B | X4 > X4 (tip); X3 > X3 (ring) |
@@ -160,6 +167,7 @@ The following functions require the corresponding board.
 The base FAUN does not contain all these circuits at once. A preset board changes socket functions; MOD1-MOD6 are optional accessories. The three MOD6 functions are selected using its jumpers, rather than being three separate modules.
 
 | BOARD | FUNCTION | PAGE |
+| --- | --- | --- |
 | MOD1 | 3-channel passive stereo mixer | 11 |
 | MOD2 | 5-input passive mono mixer | 11 |
 | MOD3 | 5-bit passive R-2R DAC | 12 |
@@ -183,6 +191,7 @@ Optional board required. No gain controls.
 MOD1 - three stereo channels
 
 | SOCKET | FUNCTION |
+| --- | --- |
 | 1 / 2 | Stereo input 1: L / R on two TS cables |
 | A | Stereo input 2 on TRS: tip L, ring R |
 | 3 / 4 | Stereo input 3: L / R on two TS cables |
@@ -193,6 +202,7 @@ Connect sources to the three inputs and route B to a high-impedance stereo input
 MOD2 - five mono inputs
 
 | SOCKET | FUNCTION |
+| --- | --- |
 | 1 | Mono input 1 |
 | 2 | Mono input 2 |
 | A | Mono input 3 (TS) |
@@ -208,6 +218,7 @@ Two different boards, two separate applications.
 MOD3 - 5-bit R-2R DAC
 
 | SOCKET | BINARY WEIGHT |
+| --- | --- |
 | 1 | 1 (least significant bit) |
 | 2 | 2 |
 | A | 4 |
@@ -220,6 +231,7 @@ Feed up to five gates with consistent high/low levels into the five inputs and t
 MOD4 - five fixed stereo positions
 
 | SOCKET | POSITION |
+| --- | --- |
 | 1 | Hard left |
 | 2 | Mid left |
 | A | Center |
@@ -233,6 +245,7 @@ Patch mono sources into the five inputs and route B to a stereo signal path. Pan
 Two sections on one optional preset board.
 
 | SOCKET | FUNCTION |
+| --- | --- |
 | 1 | XOR input 1 |
 | 2 | XOR input 2 |
 | A | XOR output |
@@ -245,6 +258,7 @@ XOR: rhythmic variations
 Connect two compatible gates to 1 and 2 and take the result from A. Ideal XOR is high when exactly one input is high and low when both are equal. Route the result to a suitable gate input and experiment with clocks or patterns.
 
 | INPUT 1 | INPUT 2 | IDEAL XOR |
+| --- | --- | --- |
 | 0 | 0 | 0 |
 | 0 | 1 | 1 |
 | 1 | 0 | 1 |
@@ -262,6 +276,7 @@ Two voltage-controlled paths using vactrols.
 MOD6: U10 1-2, U11 2-3, U13 1-2, U12 1-2
 
 | SOCKET | FUNCTION |
+| --- | --- |
 | 1 | LPG1 CV input |
 | 2 | LPG1 audio signal input |
 | A | LPG1 output |
@@ -281,6 +296,7 @@ One shared CV, two inputs and two outputs.
 MOD6: U10 2-3, U11 1-2, U13 2-3, U12 1-2
 
 | SOCKET | FUNCTION |
+| --- | --- |
 | 1 | Shared control CV |
 | 2 | Signal input 1 |
 | A | Output 1 |
@@ -302,6 +318,7 @@ A passive signal path for waveform shaping.
 MOD6: U10 2-3, U11 1-2, U13 1-2, U12 2-3
 
 | SOCKET | FUNCTION |
+| --- | --- |
 | 1 | Clipper input |
 | 2 | Not used |
 | A | Clipper output |
@@ -317,6 +334,7 @@ Clipping threshold, symmetry and maximum permitted level are not specified. Do n
 Check wiring, cable type and installed mode first.
 
 | SYMPTOM | CHECK |
+| --- | --- |
 | Missing stereo channel | Use TRS at A/B. In splitter mode: A L=1, A R=2, B L=4, B R=3. |
 | Multiple joins unexpected signals | Remove every link and rebuild only the chosen setup. Do not connect multiple sources to the same group. |
 | Low mixer level | Attenuation and load dependence are inherent to passive summing. Add gain downstream. |
@@ -334,6 +352,7 @@ Handle the module by its edges. Avoid strain on internal wires, liquids and PCB 
 Updated for the colors of the photographed version.
 
 | BASE MODE | REAR LINKS |
+| --- | --- |
 | Splitter / CV-Gate / MIDI adapter | X1-Y1; X2-Y2; X3-Y3; X4-Y4 |
 | Two 1 x 2 multiples | X1-Y1; X4-Y4; Z1-Z2; Z3-Z4 |
 | One 1 x 5 multiple | As above + Y2-Y3 |
