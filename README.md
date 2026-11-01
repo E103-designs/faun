@@ -4,7 +4,11 @@
 
 **An open-source passive Eurorack utility and a platform for your own circuits.** Four mono sockets, two TRS sockets and an accessible rear header: configure it with jumpers or change its function with a plug-in **MOD** board.
 
-<p align="center"><img src="images/front.jpg" height="520" alt="faun actual assembled module, front view"> <img src="images/detail.jpg" height="520" alt="faun actual assembled module, angled view"></p>
+<p align="center"><img src="images/angled.jpg" width="680" alt="faun three-quarter view"></p>
+
+<details><summary>Front and side views</summary>
+<p align="center"><img src="images/front.jpg" width="420" alt="faun front view"> <img src="images/side.jpg" width="420" alt="faun side view"></p>
+</details>
 
 [User manual](docs/USER_MANUAL.md) · [Manuale italiano](docs/MANUALE_IT.md) · [Design your own MOD](docs/DEVELOPMENT.md) · [Schematics](hardware/schematics/README.md) · [Contribute](CONTRIBUTING.md)
 
@@ -47,7 +51,7 @@ Power down and unplug cables before changing rear jumpers/MODs. A passive mult d
 
 Current base documentation follows the **3 October 2026 back PCB** and **29 September 2026 V1.2 front-panel design**, with photos of the assembled product. Nominal width: 2 HP; panel design outline 10.16 × 128.50 mm. Installed MODs/wires determine depth.
 
-**Corrected schematics and editable CAD are pending maintainer upload** in [hardware/schematics](hardware/schematics/README.md). Older MOD folders and diagrams remain available as historical references; the current manual above takes precedence for documented routing. This repository is not yet a complete, revision-matched hardware manufacturing release.
+**Circuit schematics and editable CAD are not yet included** in [hardware/schematics](hardware/schematics/README.md). Older MOD folders and diagrams remain available as historical references; the current manual above takes precedence for documented routing. This repository is not yet a complete, revision-matched hardware manufacturing release.
 
 ## Make it yours
 
@@ -55,7 +59,7 @@ There is no code to flash in the passive base. Modify the routing, build a proto
 
 ## Files and license
 
-`docs/` contains English/Italian manuals; `images/` contains actual product photos; `hardware/schematics/` is reserved for corrected schematics and editable sources. Existing MOD1–MOD6 folders retain historical materials.
+`docs/` contains English/Italian manuals; `images/` contains product photographs; `hardware/schematics/` is reserved for corrected schematics and editable sources. Existing MOD1–MOD6 folders retain historical materials.
 
 Original project materials: **GNU GPL-3.0**, continuing the repository's existing license. See [LICENSE](LICENSE), [NOTICE](NOTICE.md) and [CONTRIBUTING](CONTRIBUTING.md).
 
